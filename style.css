@@ -151,8 +151,12 @@ a, input, select {
     cursor: pointer;
 }
 
-label {
+.input_options_title {
     font-weight: bold;
+}
+
+.input_options_title {
+    margin-bottom: 10px;
 }
 
 #textarea,
