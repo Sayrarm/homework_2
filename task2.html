@@ -131,77 +131,82 @@
 
     <section class="planning" id="planning">
 
-        <h2>Планирование путешествия</h2>
+        <h2 class="planning_title">Планирование путешествия</h2>
 
-        <form>
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" name="name" autocomplete="name" placeholder="Иван" required>
+        <form action="#" method="POST">
 
-            <br>
+            <div>
+                <label for="name">Ваше имя:</label>
+                <br>
+                <input id="name" type="text" name="name" autocomplete="name" placeholder="Иван" required>
+            </div>
 
-            <label for="email">Ваш email:</label>
-            <input id="email" type="email" name="email" autocomplete="email" placeholder="ivan1970@example.com"
-                   required>
+            <div>
+                <label for="email">Ваш email:</label>
+                <br>
+                <input id="email" type="email" name="email" autocomplete="email" placeholder="ivan1970@example.com"
+                       required>
+            </div>
 
-            <br>
+            <div>
+                <label for="location">Выберите направление:</label>
 
-            <label for="location">Выберите направление:</label>
+                <br>
 
-            <br>
+                <select id="location" name="location" required>
+                    <option value="" disabled selected>--Выберите направление--</option>
+                    <option value="baikal">Озеро Байкал</option>
+                    <option value="kamchatka">Камчатка</option>
+                    <option value="gold"> Золотое кольцо России</option>
+                    <option value="altai">Алтай</option>
+                </select>
+            </div>
 
-            <select id="location" name="location" required>
-                <option value="" disabled selected>--Выберите направление--</option>
-                <option value="baikal">Озеро Байкал</option>
-                <option value="kamchatka">Камчатка</option>
-                <option value="gold"> Золотое кольцо России</option>
-                <option value="altai">Алтай</option>
-            </select>
+            <div>
 
-            <br>
+                <div class="input_options">
+                    <label>Тип путешествия:</label>
+                    <div class="radio_section">
+                        <label for="tr_individual">Индивидуальное</label>
+                        <input class="radio" id="tr_individual" type="radio" name="type_tr" value="individual" required>
+                    </div>
+                    <div class="radio_section">
+                        <label for="tr_group">Групповое</label>
+                        <input class="radio" id="tr_group" type="radio" name="type_tr" value="group" required>
+                    </div>
+                </div>
 
-            <label>Тип путешествия:</label>
+                <div class="input_options">
+                    <label>Дополнительные услуги:</label>
+                    <div class="checkbox_section">
+                        <label for="add_service">Гид</label>
+                        <input type="checkbox" name="add_service" id="add_service">
+                    </div>
+                    <div class="checkbox_section">
+                        <label for="transfer">Трансфер</label>
+                        <input type="checkbox" name="transfer" id="transfer">
+                    </div>
+                    <div class="checkbox_section">
+                        <label for="insurance">Страховка</label>
+                        <input type="checkbox" name="insurance" id="insurance">
+                    </div>
+                </div>
 
-            <br>
+            </div>
 
-            <label for="tr_individual">Индивидуальное</label>
-            <input id="tr_individual" type="radio" name="type_tr" value="individual" required>
+            <div>
+                <label for="textarea">Комментарии и пожелания:</label>
 
-            <br>
+                <br>
 
-            <label for="tr_group">Групповое</label>
-            <input id="tr_group" type="radio" name="type_tr" value="group" required>
+                <textarea id="textarea" name="textarea" rows="3" cols="50"
+                          placeholder="Введите комментарий..."></textarea>
+            </div>
 
-            <br>
-
-            <label>Дополнительные услуги:</label>
-
-            <br>
-
-            <label for="add_service">Гид</label>
-            <input type="checkbox" name="add_service" id="add_service">
-
-            <br>
-
-            <label for="transfer">Трансфер</label>
-            <input type="checkbox" name="transfer" id="transfer">
-
-            <br>
-
-            <label for="insurance">Страховка</label>
-            <input type="checkbox" name="insurance" id="insurance">
-
-            <br>
-
-            <label for="textarea">Комментарии и пожелания:</label>
-
-            <br>
-
-            <textarea id="textarea" name="textarea" rows="3" cols="40" placeholder="Введите комментарий..."></textarea>
-
-            <br>
-
-            <input type="submit" value="Отправить заявку">
-            <input type="reset" value="Очистить форму">
+            <div>
+                <input class="form_button" type="submit" value="Отправить заявку">
+                <input class="form_button" type="reset" value="Очистить форму">
+            </div>
         </form>
 
     </section>
