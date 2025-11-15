@@ -9,6 +9,23 @@ body {
     background-color: #C1CEF5;
 }
 
+.header_main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.header_main_link {
+    color: black;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.header_main_link:hover {
+    color: white;
+}
+
 header, footer {
     background-color: royalblue;
     height: 50px;
