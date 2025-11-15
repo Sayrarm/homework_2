@@ -56,12 +56,14 @@ a {
     color: black;
 }
 
-.photo_link {
+.photo_link,
+.contacts_link {
     color: black;
     transition: color 0.3s;
 }
 
-.photo_link:hover {
+.photo_link:hover,
+.contacts_link:hover {
     color: royalblue;
 }
 
@@ -93,7 +95,8 @@ thead {
 }
 
 .gallery_title,
-.planning_title {
+.planning_title,
+.contacts_title {
     margin-bottom: 18px;
 }
 
