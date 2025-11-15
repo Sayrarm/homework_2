@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
@@ -14,21 +14,22 @@
 <body>
 <header class="header">
     <nav>
-        <ul>
-            <li><a href="#about">О проекте</a></li>
-            <li><a href="#destinations">Направления</a></li>
-            <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#planning">Планирование</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-        </ul>
+        <a class="nav_link" href="#about">О проекте</a>
+        <a class="nav_link" href="#destinations">Направления</a>
+        <a class="nav_link" href="#gallery">Галерея</a>
+        <a class="nav_link" href="#planning">Планирование</a>
+        <a class="nav_link" href="#contacts">Контакты</a>
     </nav>
 </header>
 
 <main>
     <section class="about" id="about">
         <h2>О проекте</h2>
-        <p>Добро пожаловать на сайт "Путешествия по России"! Здесь вы найдете информацию о самых интересных местах нашей страны.</p>
-        <p>Россия - самая большая страна в мире, и на ее территории расположено множество уникальных природных и культурных достопримечательностей.</p>
+        <p>Добро пожаловать на сайт "Путешествия по России"! Здесь вы найдете информацию о самых интересных местах нашей
+            страны.</p>
+        <br>
+        <p>Россия - самая большая страна в мире, и на ее территории расположено множество уникальных природных и
+            культурных достопримечательностей.</p>
 
     </section>
 
@@ -98,21 +99,25 @@
             <img src="images/altai.jpg" width="500" height="300" alt="Алтай">
             <p>Алтай - горный край с уникальной природой</p>
         </div>
-
+        <br>
         <div>
             <p>Больше фотографий вы можете найти на наших ресурсах:</p>
             <ul>
                 <li>
-                    <a href="https://yandex.ru/images/search?lr=213&text=%D0%B1%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB" target="_blank">Фото Байкала</a>
+                    <a class="photo_link" href="https://yandex.ru/images/search?lr=213&text=%D0%B1%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB"
+                       target="_blank">Фото Байкала</a>
                 </li>
                 <li>
-                    <a href="https://yandex.ru/images/search?lr=213&text=%D0%BA%D0%B0%D0%BC%D1%87%D0%B0%D1%82%D0%BA%D0%B0" target="_blank">Фото Камчатки</a>
+                    <a class="photo_link" href="https://yandex.ru/images/search?lr=213&text=%D0%BA%D0%B0%D0%BC%D1%87%D0%B0%D1%82%D0%BA%D0%B0"
+                       target="_blank">Фото Камчатки</a>
                 </li>
                 <li>
-                    <a href="https://yandex.ru/images/search?lr=213&text=%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B5%20%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%BE%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8" target="_blank">Фото Золотого кольца России</a>
+                    <a class="photo_link" href="https://yandex.ru/images/search?lr=213&text=%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B5%20%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%BE%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+                       target="_blank">Фото Золотого кольца России</a>
                 </li>
                 <li>
-                    <a href="https://yandex.ru/images/search?lr=213&text=%D0%B0%D0%BB%D1%82%D0%B0%D0%B9" target="_blank">Фото Алтая</a>
+                    <a class="photo_link" href="https://yandex.ru/images/search?lr=213&text=%D0%B0%D0%BB%D1%82%D0%B0%D0%B9"
+                       target="_blank">Фото Алтая</a>
                 </li>
             </ul>
         </div>
@@ -127,9 +132,13 @@
             <label for="name">Ваше имя:</label>
             <input id="name" type="text" name="name" autocomplete="name" placeholder="Иван" required>
 
+            <br>
+
             <label for="email">Ваш email:</label>
             <input id="email" type="email" name="email" autocomplete="email" placeholder="ivan1970@example.com"
                    required>
+
+            <br>
 
             <label for="location">Выберите направление:</label>
             <select id="location" name="location" required>
@@ -140,23 +149,48 @@
                 <option value="altai">Алтай</option>
             </select>
 
+            <br>
+
             <label>Тип путешествия:</label>
+
+            <br>
 
             <label for="tr_individual">Индивидуальное</label>
             <input id="tr_individual" type="radio" name="type_tr" value="individual" required>
+
+            <br>
+
             <label for="tr_group">Групповое</label>
             <input id="tr_group" type="radio" name="type_tr" value="group" required>
 
+            <br>
+
             <label>Дополнительные услуги:</label>
+
+            <br>
+
             <label for="add_service">Гид</label>
             <input type="checkbox" name="add_service" id="add_service">
+
+            <br>
+
             <label for="transfer">Трансфер</label>
             <input type="checkbox" name="transfer" id="transfer">
-            <label for="insurance">Трансфер</label>
+
+            <br>
+
+            <label for="insurance">Страховка</label>
             <input type="checkbox" name="insurance" id="insurance">
 
+            <br>
+
             <label for="textarea">Комментарии и пожелания:</label>
+
+            <br>
+
             <textarea id="textarea" name="textarea" rows="3" cols="40" placeholder="Введите комментарий..."></textarea>
+
+            <br>
 
             <input type="submit" value="Отправить заявку">
             <input type="reset" value="Очистить форму">
