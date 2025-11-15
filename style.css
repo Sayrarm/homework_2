@@ -58,6 +58,11 @@ a {
 
 .photo_link {
     color: black;
+    transition: color 0.3s;
+}
+
+.photo_link:hover {
+    color: royalblue;
 }
 
 p {
@@ -72,12 +77,12 @@ h2, h3 {
     color: royalblue;
 }
 
-ol {
+ol, ul {
     padding-left: 20px;
 }
 
 table, tbody, tr, th, td {
-    padding: 2px;
+    padding: 5px;
     border: 1px solid #d5d8dc;
     border-collapse: collapse;
 }
@@ -85,4 +90,20 @@ table, tbody, tr, th, td {
 thead {
     background-color: #dfdfdf;
     text-align: left;
+}
+
+.gallery_title {
+    margin-bottom: 18px;
+}
+
+.gallery_card {
+    width: 65%;
+    border: 1px dashed black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+img {
+    border-radius: 5px;
 }
