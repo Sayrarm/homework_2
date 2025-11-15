@@ -48,6 +48,12 @@ a {
 
 .nav_link {
     color: white;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.nav_link:hover {
+    color: black;
 }
 
 .photo_link {
