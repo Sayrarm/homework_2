@@ -72,8 +72,17 @@ h2, h3 {
     color: royalblue;
 }
 
+ol {
+    padding-left: 20px;
+}
+
 table, tbody, tr, th, td {
     padding: 2px;
     border: 1px solid #d5d8dc;
     border-collapse: collapse;
+}
+
+thead {
+    background-color: #dfdfdf;
+    text-align: left;
 }
